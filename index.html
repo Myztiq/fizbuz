@@ -1,0 +1,23 @@
+<html>
+<body>
+	<div id="fizOut"></div>
+	<script>
+		var start = 0;
+		var finish = 100;
+		var outString = document.getElementById("fizOut").innerHTML;
+		for(var i=start;i<=finish;i++){
+			if(i>0){
+				outString += "<br/>";
+			}
+			outString += i;
+			if(i%2 == 0 && i>0){
+				outString += " fizz";
+			}
+			if(i%3 == 0 && i>0){
+				outString += " buzz";
+			}
+		}
+		document.getElementById("fizOut").innerHTML = outString;
+	</script>
+</body>
+</html>
